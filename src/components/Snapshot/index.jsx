@@ -32,7 +32,7 @@ const Snapshot = () => {
     formData.append('picture', snapshotUrl); // Bu erda tasvirni yuklaymiz
 
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/signup', formData, {
+      const response = await axios.post('https://face-auth-back.onrender.com/api/auth/signup', formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Kontent turini ko'rsatish
         },

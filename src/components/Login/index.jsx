@@ -28,7 +28,7 @@ const Login = () => {
     const userData = { email, password };
 
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/login', userData);
+      const response = await axios.post('https://face-auth-back.onrender.com/api/auth/login', userData);
       console.log('Foydalanuvchi muvaffaqiyatli kirdi:', response.data);
     } catch (error) {
       console.error('Xatolik yuz berdi:', error);
@@ -39,7 +39,7 @@ const Login = () => {
   const handleFaceLogin = async () => {
     if (snapshotUrl) {
       try {
-        const response = await axios.post('http://localhost:4000/api/auth/face-login', {
+        const response = await axios.post('https://face-auth-back.onrender.com/api/auth/face-login', {
           picture: snapshotUrl,
         });
         console.log('Foydalanuvchi aniqlash natijasi:', response.data);

@@ -49,7 +49,7 @@ const FullScreenWebcam = () => {
     const results = [];
     for (const detection of detections) {
       const descriptor = detection.descriptor;
-      const response = await axios.post('http://localhost:4000/api/auth/check-faces', {
+      const response = await axios.post('https://face-auth-back.onrender.com/api/auth/check-faces', {
         descriptor: Array.from(descriptor)
       });
 
