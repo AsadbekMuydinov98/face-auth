@@ -1,0 +1,30 @@
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(81, 81, 226);
+    padding: 50px;
+    gap: 15px;
+}
+
+nav div a{
+    font-size: 25px;
+    color: white;
+    transition: all  0.5s ease;
+}
+
+nav div a:hover{
+    color: rgb(6, 6, 146);
+}
+
+
+@media (max-width:  768px) {
+    nav{
+        width: 550px;
+        padding: 30px;
+    }
+    nav div a{
+        font-size: 15px;
+        color: white;
+        transition: all  0.5s ease;
+    }
+}
